@@ -267,116 +267,127 @@
         </header>
 
         <main class="row">
-            <div class="row text-center">
-                <div class="col-6">
-                    <div class="card mb-4 rounded-3 shadow-sm h-100">
+            <div class="row ">
+                <div class="col-6 text-center">
+                    <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
                             <h4 class="my-0 fw-normal">Товар 1</h4>
                         </div>
                         <div class="card-body">
-                            <h2 class="card-title mt-2 pricing-card-title">$100</h2>
+                            <h2 class="card-title pricing-card-title">$100</h2>
                             <p>
                                 10 users included,
                                 2 GB of storage,
                                 Email support,
                                 Help center access
                             </p>
-                            <button type="button" class="w-100 mt-5 btn btn-lg btn-success">Купить</button>
+                            <button type="button" class="btn btn-success mt-4">Купить</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="card mb-4 rounded-3 shadow-sm h-100">
+                    <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Оставьте заявку</h4>
                             <form>
-                              <div class="mb-3 ">
-                                <label for="exampleInputEmail1" class="form-label">Имя</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                              </div>
-                              <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="exampleInputPassword1">
-                              </div>
-
-                              <button type="submit" class="w-100 btn btn-lg btn-success">Отправить</button>
+                                <div class="mb-3">
+                                    <label for="disabledTextInput" class="form-label">Имя</label>
+                                    <input type="text" id="disabledTextInput" class="form-control"
+                                           placeholder="Как вас зовут?">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                           aria-describedby="emailHelp" placeholder="Укажите email">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Отправить</button>
                             </form>
                         </div>
                     </div>
                 </div>
-                <p>
-                  <button class="btn btn-primary mt-4 col-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample1">
-                      Как купить?
-                  </button>
-                  <button class="btn btn-info mt-4 col-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
-                      Как доставить?
-                  </button>
-                  <button class="btn btn-secondary mt-4 col-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample3">
-                      Какая гарантия?
-                  </button>
-                </p>
-                <div style="min-height: 120px;">
-                  <div class="collapse collapse-horizontal" id="collapseWidthExample1">
-                    <div class="card card-body w-100 badge bg-primary" style="width: 300px;">
-                      Пока никак.
+
+                <div class="card">
+                    <p class="h2 text-center mt-2 mb-2">FAQ </p>
+                    <div class="card-body text-center">
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-info" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                               aria-expanded="false" aria-controls="collapseExample1">
+                                Как купить?
+                            </a>
+                            <a class="btn btn-info" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                               aria-expanded="false" aria-controls="collapseExample2">
+                                Как достваить?
+                            </a>
+                            <a class="btn btn-info" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+                               aria-expanded="false" aria-controls="collapseExample3">
+                                Какая гарантия?
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample1">
+                            <div class="card card-body text-bg-info">
+                                Перенесите нужный товар в корзину.
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body text-bg-info">
+                                Перейдите в заказы, укажите способ доставки, точный адрес, нажмите оплатить.
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseExample3">
+                            <div class="card card-body text-bg-info">
+                                Гарантия указана в описании товара.
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="collapse collapse-horizontal" id="collapseWidthExample2">
-                    <div class="card card-body w-100 badge bg-info" style="width: 300px;">
-                      Как хочешь.
-                    </div>
-                  </div>
-                    <div class="collapse collapse-horizontal" id="collapseWidthExample3">
-                    <div class="card card-body w-100 badge bg-secondary" style="width: 300px;">
-                      Гарантии нет.
-                    </div>
-                  </div>
                 </div>
-                <table class="table">
-                  <thead>
+
+                <table class="table mt-3">
+                    <thead>
                     <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Название товара</th>
-                      <th scope="col">Цена</th>
+                        <th scope="col">Номер</th>
+                        <th scope="col">Название товара</th>
+                        <th scope="col">Цена за штуку</th>
                         <th scope="col">Колличество</th>
-                      <th scope="col">Итоговая сумма</th>
-                      <th scope="col">Статус</th>
+                        <th scope="col">Итоговая сумма</th>
+                        <th scope="col">Статус заказа</th>
                     </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Iphone</td>
-                      <td>100000</td>
-                      <td>2</td>
-                      <td>200000</td>
-                      <td class="table-warning">Обработка</td>
-
+                    </thead>
+                    <tbody>
+                    <tr class="table-warning">
+                        <th scope="row">1</th>
+                        <td>Ноутбук MSI</td>
+                        <td>150 000р.</td>
+                        <td>2</td>
+                        <td>300 000р.</td>
+                        <td>В ОБРАБОТКЕ</td>
                     </tr>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Ipad</td>
-                      <td>120000</td>
-                      <td>1</td>
-                      <td>120000</td>
-                      <td class="table-success">Обработан</td>
+                    <tr class="table-primary">
+                        <th scope="row">2</th>
+                        <td>IPhone 15 PRO MAX</td>
+                        <td>200 000р.</td>
+                        <td>1</td>
+                        <td>200 000р.</td>
+                        <td>НОВЫЙ</td>
                     </tr>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Samsung</td>
-                      <td>90000</td>
-                      <td>3</td>
-                      <td>270000</td>
-                      <td class="table-danger">Отмена</td>
+                    <tr class="table-success">
+                        <th scope="row">3</th>
+                        <td>IPad 5</td>
+                        <td>250 000р.</td>
+                        <td>1</td>
+                        <td>250 000р.</td>
+                        <td>ОБРАБОТАН</td>
                     </tr>
-                  </tbody>
+                    <tr class="table-danger">
+                        <th scope="row">4</th>
+                        <td>Xiaomi 11 pro</td>
+                        <td>32 000р.</td>
+                        <td>3</td>
+                        <td>96 000р.</td>
+                        <td>ОТМЕНЕН</td>
+                    </tr>
+                    </tbody>
                 </table>
-
             </div>
-
         </main>
-
-
 
     </div>
 
